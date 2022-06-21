@@ -3,12 +3,6 @@ from dotenv import load_dotenv
 
 load_dotenv()  # take environment variables from .env.
 
-# SOME_CONFIG_I_NEED = os.environ.get("SOME_CONFIG_I_NEED")
-print("printing....... Checking Database Verables")
-print(load_dotenv())
-
-# print(SOME_CONFIG_I_NEED)
-
 
 class Settings(BaseSettings):
     database_hostname: str = "localhost"
