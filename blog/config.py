@@ -26,6 +26,5 @@ class Settings(BaseSettings):
 
 settings = Settings()
 if settings:
-    print("Connecting to database........\n")
     print(
         f"Connecting to database........\n Database Name: {settings.database_name},\n Database Password: {settings.database_password}")
