@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from config import settings
-from .routers import post
-from .config import settings
+# from routers import post
+from routers import post
+from config import settings
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -17,6 +18,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(post.router)
+# app.include_router(post.router)
 
 
